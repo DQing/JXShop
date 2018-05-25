@@ -1,0 +1,20 @@
+version: '2'
+services:
+  mysql:
+    image: mysql:5.7
+    container_name: JXShop
+    ports:
+      - 3310:3306
+    environment:
+      - LANG=C.UTF-8
+      - TERM=dumb
+      - MYSQL_ROOT_PASSWORD=root
+      - MYSQL_DATABASE=Employee
+      - MYSQL_PASSWORD=12345678
+      - MYSQL_USER=douqing
+    networks:
+       main:
+        aliases:
+          - ad
+networks:
+  main:
