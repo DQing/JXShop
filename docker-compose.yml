@@ -9,12 +9,12 @@ services:
       - LANG=C.UTF-8
       - TERM=dumb
       - MYSQL_ROOT_PASSWORD=root
-      - MYSQL_DATABASE=Employee
+      - MYSQL_DATABASE=JXShop
       - MYSQL_PASSWORD=12345678
       - MYSQL_USER=douqing
     networks:
        main:
         aliases:
-          - ad
+          - JX
 networks:
   main:
