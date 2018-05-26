@@ -1,5 +1,14 @@
 version: '2'
 services:
+  jenkins-ci:
+    image: jenkins
+    container_name: ci
+    ports:
+      - "8080:8080"
+    networks:
+      main:
+        aliases:
+          - jenkins-ci
   mysql:
     image: mysql:5.7
     container_name: JXShop
