@@ -1,7 +1,7 @@
 package com.thoughtworks.cn.JXShop.entity;
 
-import cn.tws.utils.LogisticsStatus;
 import com.fasterxml.jackson.annotation.JsonFormat;
+import com.thoughtworks.cn.JXShop.utils.LogisticsStatus;
 
 import javax.persistence.*;
 import java.sql.Timestamp;
